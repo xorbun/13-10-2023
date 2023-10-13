@@ -32,7 +32,7 @@ const getgames= function()
         const col=document.createElement("div")
         col.classList.add("col")
         const card= document.createElement("div")
-        card.classList.add("card", "mb-3", "p-3", "bg-warning-subtle")
+        card.classList.add("card", "mb-3", "p-3", "bg-body-tertiary")
         const card2=document.createElement("div")
         card2.classList.add("card-body")
         const newimg=document.createElement("img")
@@ -43,7 +43,7 @@ const getgames= function()
         newtitle.innerText=game.name
         newprice.innerText="prezzo: "+ game.price + "$"
         const details=document.createElement("button")
-        details.classList.add("btn", "bg-light")
+        details.classList.add("btn", "bg-info-subtle")
          details.innerHTML=`<a href="backoffice.html?eventId=${game._id
         }">dettagli</a>`
         
