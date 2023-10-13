@@ -22,6 +22,7 @@ if(gameid)
             {
                 console.log("orrore")
             }
+            
         })
         .then((gamemod)=>
         {
@@ -87,6 +88,22 @@ else
 {
     butt.innerText="Invia"
 }
+const resetter=document.getElementById("reset")
+resetter.addEventListener("click", function()
+{
+    const nameinput=document.getElementById("name")
+    const descinput=document.getElementById("description")
+    const brandinput=document.getElementById("brand")
+    const imginput=document.getElementById("imageUrl")
+    const priceinput=document.getElementById("price")
+
+    nameinput.value=" "
+    descinput.value=" "
+    brandinput.value=" "
+    imginput.value=" "
+    priceinput.value=" "
+    
+})
 formreference.addEventListener("submit",function(e)
 {
     e.preventDefault()
